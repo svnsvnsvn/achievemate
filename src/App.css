@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: #f0f7ff; */
+  background-image: url('media/doodles.jpg');
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #33475b;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #0077b6;
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.TodoWrapper {
+  background: #e0f4ff;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: #ffffff;
+  border: 2px solid #00a9ce;
+  padding: 0.7rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #0077b6;
+  border-radius: 15px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-input::placeholder {
+  color: #aad4e5;
+  font-style: italic;
+}
+
+.todo-input:focus {
+  border: 2px solid #005f80;
+  box-shadow: 0px 0px 6px rgba(0, 159, 202, 0.5);
+}
+
+.todo-btn {
+  background: #00a9ce;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.todo-btn:hover {
+  background: #0077b6;
+  transform: translateY(-2px);
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  color: #0077b6;
+  padding: 0.75rem 1rem;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  border: 1px solid #aad4e5;
+  transition: box-shadow 0.3s ease;
+}
+
+.Todo:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+  color: #00a9ce;
+  transition: color 0.2s ease;
+}
+
+.fa-trash:hover {
+  color: #0077b6;
+}
+
+.incompleted {
+  color: #0077b6;
+  cursor: pointer;
+}
+
+.completed {
+  color: #b0dcef;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+  transform: scale(1.2);
+  color: #005f80;
+}
